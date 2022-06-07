@@ -19,15 +19,18 @@ class SchoolsCoordinator {
         self.viewController = viewController
     }
 
+    // Configures and sets up some UI components i.e tableView, navigation bar, etc.
     func configure() {
         viewCoordinator.configureTableView()
         viewCoordinator.configureNavigationBar()
     }
 
+    // Calls the viewCoordinator's reloadData method to reload the tableview
     func reloadData() {
         viewCoordinator.reloadData()
     }
 
+    // Performs a fetch request to the API manager found on the request coordinator
     func fetchSchools() {
         // request
         requestCoordinator.fetchSchoolListRequest()
