@@ -8,11 +8,18 @@
 import Foundation
 
 public struct Schools: Codable {
+
     let dbn: String
     let school_name: String
     let boro: String
     let overview_paragraph: String
-
+    let primary_address_line_1: String
+    let borough: String?
+    let city: String?
+    let zip: String?
+    let state_code: String?
+    let latitude: String?
+    let longitude: String?
     /*let school_10th_seats: String
     let academicopportunities1: String
     let academicopportunities2: String
@@ -31,11 +38,5 @@ public struct Schools: Codable {
     let finalgrades: String
     let total_students: String
     let extracurricular_activities: String
-    let primary_address_line_1: String
-    let city: String
-    let zip: String
-    let state_code: String
-    let latitude: String
-    let longitude: String
-    let borough: String*/
+    let primary_address_line_1: String */
 }
