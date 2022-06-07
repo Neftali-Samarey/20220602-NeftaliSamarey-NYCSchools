@@ -22,6 +22,7 @@
 		EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F4284F01B400BB1249 /* UIColor+Extensions.swift */; };
 		EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F7284F290100BB1249 /* ModalPresentationController.swift */; };
 		EDC507FA284F298600BB1249 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F9284F298600BB1249 /* UIView+Extensions.swift */; };
+		EDC507FD284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507FC284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EDC507F4284F01B400BB1249 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		EDC507F7284F290100BB1249 /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
 		EDC507F9284F298600BB1249 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		EDC507FC284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailViewControllerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		EDC507EB284DEA0F00BB1249 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDC507FB284F2A4800BB1249 /* CardController */,
 				EDC507EC284DEB8600BB1249 /* TableView */,
 			);
 			path = Views;
@@ -164,6 +167,14 @@
 				EDC507F7284F290100BB1249 /* ModalPresentationController.swift */,
 			);
 			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		EDC507FB284F2A4800BB1249 /* CardController */ = {
+			isa = PBXGroup;
+			children = (
+				EDC507FC284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift */,
+			);
+			path = CardController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				EDC507A928488A4700BB1249 /* AppDelegate.swift in Sources */,
 				EDC507FA284F298600BB1249 /* UIView+Extensions.swift in Sources */,
 				EDC507E6284DE89B00BB1249 /* SchoolsCoordinator.swift in Sources */,
+				EDC507FD284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift in Sources */,
 				EDC507AB28488A4700BB1249 /* SceneDelegate.swift in Sources */,
 				EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */,
 				EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */,

@@ -34,6 +34,13 @@ class SchoolsViewController: UIViewController {
     }
 }
 
+extension SchoolsViewController: UIViewControllerTransitioningDelegate {
+
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        ModalPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+}
+
 extension SchoolsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +61,7 @@ extension SchoolsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        coordinator.presentSchoolDetails(with: datasource[indexPath.item])
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -39,4 +39,9 @@ class SchoolsCoordinator {
             self.completionHandler?(result)
         }
     }
+
+    // MARK: - Card Slider
+    func presentSchoolDetails(with details: Schools) {
+        viewCoordinator.presentSchoolDetails(with: details)
+    }
 }
