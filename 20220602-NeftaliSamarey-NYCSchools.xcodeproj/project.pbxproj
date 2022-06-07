@@ -20,6 +20,8 @@
 		EDC507EA284DE8C700BB1249 /* SchoolsRequestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507E9284DE8C700BB1249 /* SchoolsRequestCoordinator.swift */; };
 		EDC507EE284DEBA300BB1249 /* SchoolsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507ED284DEBA300BB1249 /* SchoolsTableView.swift */; };
 		EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F4284F01B400BB1249 /* UIColor+Extensions.swift */; };
+		EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F7284F290100BB1249 /* ModalPresentationController.swift */; };
+		EDC507FA284F298600BB1249 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507F9284F298600BB1249 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		EDC507E9284DE8C700BB1249 /* SchoolsRequestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsRequestCoordinator.swift; sourceTree = "<group>"; };
 		EDC507ED284DEBA300BB1249 /* SchoolsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableView.swift; sourceTree = "<group>"; };
 		EDC507F4284F01B400BB1249 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		EDC507F7284F290100BB1249 /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		EDC507F9284F298600BB1249 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				EDC507F3284F019D00BB1249 /* Extensions */,
 				EDC507DC284DC5CE00BB1249 /* Networking */,
 				EDC507E2284DE7E700BB1249 /* Screens */,
+				EDC507F6284F28CB00BB1249 /* Base Controllers */,
 				EDC507AE28488A4700BB1249 /* Main.storyboard */,
 				EDC507B128488A4A00BB1249 /* Assets.xcassets */,
 				EDC507B328488A4A00BB1249 /* LaunchScreen.storyboard */,
@@ -148,8 +153,17 @@
 			isa = PBXGroup;
 			children = (
 				EDC507F4284F01B400BB1249 /* UIColor+Extensions.swift */,
+				EDC507F9284F298600BB1249 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDC507F6284F28CB00BB1249 /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDC507F7284F290100BB1249 /* ModalPresentationController.swift */,
+			);
+			path = "Base Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +243,10 @@
 				EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */,
 				EDC507E1284DE5CE00BB1249 /* Schools.swift in Sources */,
 				EDC507A928488A4700BB1249 /* AppDelegate.swift in Sources */,
+				EDC507FA284F298600BB1249 /* UIView+Extensions.swift in Sources */,
 				EDC507E6284DE89B00BB1249 /* SchoolsCoordinator.swift in Sources */,
 				EDC507AB28488A4700BB1249 /* SceneDelegate.swift in Sources */,
+				EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */,
 				EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */,
 				EDC507EE284DEBA300BB1249 /* SchoolsTableView.swift in Sources */,
 			);
