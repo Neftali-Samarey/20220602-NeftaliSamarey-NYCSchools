@@ -8,5 +8,11 @@
 import Foundation
 
 class SchoolDetailCoordinator {
-    
+
+    lazy var viewCoordinator = SchoolDetailViewCoordinator(coordinator: self)
+    let viewController: SchoolDetailViewControllerCard
+
+    init(viewController: SchoolDetailViewControllerCard) {
+        self.viewController = viewController
+    }
 }

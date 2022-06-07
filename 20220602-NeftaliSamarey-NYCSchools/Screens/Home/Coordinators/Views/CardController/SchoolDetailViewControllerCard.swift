@@ -11,6 +11,8 @@ class SchoolDetailViewControllerCard: UIViewController {
 
     var school: Schools?
 
+    lazy var coordinator = SchoolDetailCoordinator(viewController: self)
+
     public var hasSetPointOrigin = false
     public var pointOrigin: CGPoint?
 

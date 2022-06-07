@@ -8,5 +8,10 @@
 import Foundation
 
 class SchoolDetailViewCoordinator {
-    //
+
+    let coordinator: SchoolDetailCoordinator
+
+    init(coordinator: SchoolDetailCoordinator) {
+        self.coordinator = coordinator
+    }
 }
