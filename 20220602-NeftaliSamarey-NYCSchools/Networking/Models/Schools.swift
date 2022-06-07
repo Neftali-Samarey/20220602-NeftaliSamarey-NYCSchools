@@ -12,14 +12,11 @@ public struct Schools: Codable {
     let school_name: String
     let boro: String
     let overview_paragraph: String
-    let school_10th_seats: String
+
+    /*let school_10th_seats: String
     let academicopportunities1: String
     let academicopportunities2: String
-    let academicopportunities3: String
-    let academicopportunities4: String
     let ell_programs: String
-    let language_classes: String
-    let advancedplacement_courses: String
     let neighborhood: String
     let campus_name: String
     let building_code: String
@@ -40,5 +37,5 @@ public struct Schools: Codable {
     let state_code: String
     let latitude: String
     let longitude: String
-    let borough: String
+    let borough: String*/
 }
