@@ -90,6 +90,7 @@ class DetailViewCoordinator {
 }
 
 extension DetailViewCoordinator: DetailViewBottomViewDelegate {
+
     func didSelectViewGrades() {
         guard let schoolDetails = schoolDetails else {
             return
