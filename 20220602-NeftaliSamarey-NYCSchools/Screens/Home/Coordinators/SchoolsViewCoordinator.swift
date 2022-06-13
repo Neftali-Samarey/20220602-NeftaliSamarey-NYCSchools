@@ -13,6 +13,8 @@ class SchoolsViewCoordinator {
     private lazy var activityView = UIActivityIndicatorView(style: .medium)
     private lazy var detailCardSlider = SchoolDetailViewControllerCard()
 
+    private lazy var detailViewController = DetailViewController()
+
     let coordinator: SchoolsCoordinator
 
     init(coordinator: SchoolsCoordinator) {
@@ -53,6 +55,12 @@ class SchoolsViewCoordinator {
         detailCardSlider.school = details
 
         controller.present(detailCardSlider, animated: true, completion: nil)
+    }
+
+    // MARK: - View Controller
+    func pushSchoolDetails(with details: Schools) {
+        detailViewController.school = details
+        coordinator.viewController.navigationController?.pushViewController(detailViewController, animated: true)
     }
 
     @objc

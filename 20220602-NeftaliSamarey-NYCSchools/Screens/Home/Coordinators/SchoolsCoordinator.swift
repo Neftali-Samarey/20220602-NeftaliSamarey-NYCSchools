@@ -44,4 +44,8 @@ class SchoolsCoordinator {
     func presentSchoolDetails(with details: Schools) {
         viewCoordinator.presentSchoolDetails(with: details)
     }
+
+    func pushSchoolDetails(with details: Schools) {
+        viewCoordinator.pushSchoolDetails(with: details)
+    }
 }

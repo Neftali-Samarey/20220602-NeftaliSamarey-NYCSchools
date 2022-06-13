@@ -14,5 +14,11 @@ class SchoolDetailCoordinator {
 
     init(viewController: SchoolDetailViewControllerCard) {
         self.viewController = viewController
+
+        viewCoordinator.configureUI()
+    }
+
+    func configure(with details: Schools) {
+        viewCoordinator.configure(with: details)
     }
 }

@@ -30,6 +30,7 @@ class SchoolDetailViewControllerCard: UIViewController {
         }
 
         // configure view
+        coordinator.configure(with: school)
     }
 
     override func viewDidLayoutSubviews() {

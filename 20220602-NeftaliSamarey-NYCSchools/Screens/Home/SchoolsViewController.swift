@@ -61,7 +61,8 @@ extension SchoolsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        coordinator.presentSchoolDetails(with: datasource[indexPath.item])
+        // coordinator.presentSchoolDetails(with: datasource[indexPath.item])
+        coordinator.pushSchoolDetails(with: datasource[indexPath.item])
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

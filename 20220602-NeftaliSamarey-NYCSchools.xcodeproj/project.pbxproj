@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1528E228502CF800B20995 /* SchoolDetailViewTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1528E128502CF800B20995 /* SchoolDetailViewTitleLabel.swift */; };
+		ED1528EE28507DBE00B20995 /* SchoolsDetailCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1528ED28507DBE00B20995 /* SchoolsDetailCardStackView.swift */; };
+		ED1528F22850845000B20995 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1528F12850845000B20995 /* Roboto-Medium.ttf */; };
+		ED1528F4285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1528F3285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift */; };
+		ED1528F628508A3100B20995 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1528F528508A3100B20995 /* Roboto-Regular.ttf */; };
+		ED8553AD28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553AC28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift */; };
+		ED8553BA28564EDE0054BFA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553B928564EDE0054BFA8 /* DetailViewController.swift */; };
+		ED8553BE285655240054BFA8 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553BD285655240054BFA8 /* DetailCoordinator.swift */; };
+		ED8553C0285655360054BFA8 /* DetailViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553BF285655360054BFA8 /* DetailViewCoordinator.swift */; };
+		ED8553C22856D2230054BFA8 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553C12856D2220054BFA8 /* Scores.swift */; };
+		ED8553C72856D8450054BFA8 /* DetailViewStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */; };
 		EDC507A928488A4700BB1249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507A828488A4700BB1249 /* AppDelegate.swift */; };
 		EDC507AB28488A4700BB1249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507AA28488A4700BB1249 /* SceneDelegate.swift */; };
 		EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507AC28488A4700BB1249 /* SchoolsViewController.swift */; };
@@ -28,6 +39,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED1528E128502CF800B20995 /* SchoolDetailViewTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailViewTitleLabel.swift; sourceTree = "<group>"; };
+		ED1528ED28507DBE00B20995 /* SchoolsDetailCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDetailCardStackView.swift; sourceTree = "<group>"; };
+		ED1528F12850845000B20995 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		ED1528F3285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailViewDescriptionLabel.swift; sourceTree = "<group>"; };
+		ED1528F528508A3100B20995 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		ED8553AC28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailDescriptionTextView.swift; sourceTree = "<group>"; };
+		ED8553B928564EDE0054BFA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ED8553BD285655240054BFA8 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		ED8553BF285655360054BFA8 /* DetailViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCoordinator.swift; sourceTree = "<group>"; };
+		ED8553C12856D2220054BFA8 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewStackView.swift; sourceTree = "<group>"; };
 		EDC507A528488A4700BB1249 /* 20220602-NeftaliSamarey-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20220602-NeftaliSamarey-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC507A828488A4700BB1249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC507AA28488A4700BB1249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +83,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED1528E028502CCD00B20995 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				ED1528E128502CF800B20995 /* SchoolDetailViewTitleLabel.swift */,
+				ED1528F3285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		ED1528EC28507DA100B20995 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED1528ED28507DBE00B20995 /* SchoolsDetailCardStackView.swift */,
+			);
+			path = StackViews;
+			sourceTree = "<group>";
+		};
+		ED1528EF285083F600B20995 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED1528F0285083FE00B20995 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED1528F0285083FE00B20995 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED1528F12850845000B20995 /* Roboto-Medium.ttf */,
+				ED1528F528508A3100B20995 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ED1528F728508D2700B20995 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553AC28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		ED8553B728564EAD0054BFA8 /* School Details */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553B928564EDE0054BFA8 /* DetailViewController.swift */,
+				ED8553B828564EC00054BFA8 /* Coordinators */,
+			);
+			path = "School Details";
+			sourceTree = "<group>";
+		};
+		ED8553B828564EC00054BFA8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553BD285655240054BFA8 /* DetailCoordinator.swift */,
+				ED8553BF285655360054BFA8 /* DetailViewCoordinator.swift */,
+				ED8553C32856D8200054BFA8 /* Views */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		ED8553C32856D8200054BFA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553C52856D82A0054BFA8 /* Labels */,
+				ED8553C42856D8250054BFA8 /* StackViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED8553C42856D8250054BFA8 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */,
+			);
+			path = StackViews;
+			sourceTree = "<group>";
+		};
+		ED8553C52856D82A0054BFA8 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		EDC5079C28488A4700BB1249 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +189,7 @@
 			children = (
 				EDC507A828488A4700BB1249 /* AppDelegate.swift */,
 				EDC507AA28488A4700BB1249 /* SceneDelegate.swift */,
+				ED1528EF285083F600B20995 /* Resources */,
 				EDC507F3284F019D00BB1249 /* Extensions */,
 				EDC507DC284DC5CE00BB1249 /* Networking */,
 				EDC507E2284DE7E700BB1249 /* Screens */,
@@ -107,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC507E0284DE5CE00BB1249 /* Schools.swift */,
+				ED8553C12856D2220054BFA8 /* Scores.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC507E3284DE80A00BB1249 /* Home */,
+				ED8553B728564EAD0054BFA8 /* School Details */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -195,6 +305,9 @@
 		EDC50803284F305700BB1249 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED1528F728508D2700B20995 /* TextView */,
+				ED1528EC28507DA100B20995 /* StackViews */,
+				ED1528E028502CCD00B20995 /* Labels */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,7 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1528F22850845000B20995 /* Roboto-Medium.ttf in Resources */,
 				EDC507B528488A4A00BB1249 /* LaunchScreen.storyboard in Resources */,
+				ED1528F628508A3100B20995 /* Roboto-Regular.ttf in Resources */,
 				EDC507B228488A4A00BB1249 /* Assets.xcassets in Resources */,
 				EDC507B028488A4700BB1249 /* Main.storyboard in Resources */,
 			);
@@ -270,17 +385,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8553BE285655240054BFA8 /* DetailCoordinator.swift in Sources */,
+				ED1528EE28507DBE00B20995 /* SchoolsDetailCardStackView.swift in Sources */,
+				ED8553C0285655360054BFA8 /* DetailViewCoordinator.swift in Sources */,
+				ED8553C72856D8450054BFA8 /* DetailViewStackView.swift in Sources */,
+				ED8553C22856D2230054BFA8 /* Scores.swift in Sources */,
 				EDC507DE284DC5E300BB1249 /* NetworkManager.swift in Sources */,
 				EDC507E8284DE8AA00BB1249 /* SchoolsViewCoordinator.swift in Sources */,
+				ED1528F4285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift in Sources */,
 				EDC507EA284DE8C700BB1249 /* SchoolsRequestCoordinator.swift in Sources */,
 				EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */,
+				ED8553AD28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift in Sources */,
 				EDC507E1284DE5CE00BB1249 /* Schools.swift in Sources */,
 				EDC50802284F304B00BB1249 /* SchoolDetailViewCoordinator.swift in Sources */,
+				ED1528E228502CF800B20995 /* SchoolDetailViewTitleLabel.swift in Sources */,
 				EDC507A928488A4700BB1249 /* AppDelegate.swift in Sources */,
 				EDC507FA284F298600BB1249 /* UIView+Extensions.swift in Sources */,
 				EDC507E6284DE89B00BB1249 /* SchoolsCoordinator.swift in Sources */,
 				EDC507FD284F2A7100BB1249 /* SchoolDetailViewControllerCard.swift in Sources */,
 				EDC507AB28488A4700BB1249 /* SceneDelegate.swift in Sources */,
+				ED8553BA28564EDE0054BFA8 /* DetailViewController.swift in Sources */,
 				EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */,
 				EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */,
 				EDC507EE284DEBA300BB1249 /* SchoolsTableView.swift in Sources */,
