@@ -13,7 +13,7 @@ class SchoolDetailViewTitleLabel: UILabel {
         super.init(frame: frame)
 
         translatesAutoresizingMaskIntoConstraints = false
-        font = UIFont(name: "Roboto-Medium", size: 26)
+        font = UIFont(name: "Roboto-Medium", size: 24)
         numberOfLines = 0
         textAlignment = .left
         textColor = UIColor.deepNavy

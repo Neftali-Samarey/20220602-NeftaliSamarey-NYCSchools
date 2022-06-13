@@ -71,6 +71,8 @@ class DetailViewCoordinator {
 
     func configure(with detail: Schools) {
         schoolDetails = detail
+
+        middleContainerView.configure(with: detail.school_name)
     }
 
     // MARK: Slider
