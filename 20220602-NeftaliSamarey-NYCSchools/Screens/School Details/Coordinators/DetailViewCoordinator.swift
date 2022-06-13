@@ -56,23 +56,26 @@ class DetailViewCoordinator {
         middleContainerView.leadingAnchor.constraint(equalTo: imageViewBanner.leadingAnchor, constant: 6).isActive = true
         middleContainerView.trailingAnchor.constraint(equalTo: imageViewBanner.trailingAnchor, constant: -6).isActive = true
         middleContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        middleContainerView.centerYAnchor.constraint(equalTo: imageViewBanner.centerYAnchor, constant: 150).isActive = true
+        middleContainerView.centerYAnchor.constraint(equalTo: imageViewBanner.centerYAnchor, constant: 135).isActive = true
 
         stackView.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 10).isActive = true
         stackView.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -10).isActive = true
-        stackView.topAnchor.constraint(equalTo: imageViewBanner.bottomAnchor, constant: 10).isActive = true
+        stackView.topAnchor.constraint(equalTo: imageViewBanner.bottomAnchor, constant: 90).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomView.topAnchor, constant: -10).isActive = true
 
         bottomView.heightAnchor.constraint(equalToConstant: 90).isActive = true
         bottomView.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 10).isActive = true
         bottomView.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -10).isActive = true
         bottomView.bottomAnchor.constraint(equalTo: controller.view.bottomAnchor, constant: -10).isActive = true
+
+        controller.view.sendSubviewToBack(stackView)
     }
 
     func configure(with detail: Schools) {
         schoolDetails = detail
 
         middleContainerView.configure(with: detail.school_name)
+        stackView.configure(with: detail.overview_paragraph)
     }
 
     // MARK: Slider

@@ -12,7 +12,7 @@ class SchoolDetailDescriptionTextView: UITextView {
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
 
-        translatesAutoresizingMaskIntoConstraints = false
+        self.translatesAutoresizingMaskIntoConstraints = false
 
         configure()
     }
@@ -22,11 +22,12 @@ class SchoolDetailDescriptionTextView: UITextView {
     }
 
     private func configure() {
-        isUserInteractionEnabled = false
+        isEditable = false
         isScrollEnabled = true
         font = UIFont(name: "Roboto-Regular", size: 16)
         textAlignment = .left
         textColor = UIColor.altDeepNavy
+        isScrollEnabled = true
     }
 
     func configure(with details: String) {

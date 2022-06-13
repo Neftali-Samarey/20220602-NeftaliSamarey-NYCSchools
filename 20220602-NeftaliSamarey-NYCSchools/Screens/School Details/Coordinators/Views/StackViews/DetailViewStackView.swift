@@ -9,6 +9,8 @@ import UIKit
 
 class DetailViewStackView: UIStackView {
 
+    private let textview = SchoolDetailDescriptionTextView()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -25,5 +27,14 @@ class DetailViewStackView: UIStackView {
         alignment = .center
         spacing = 10
         distribution = .fill
+
+        addArrangedSubview(textview)
+
+        textview.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        textview.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width - 20).isActive = true
+    }
+
+    func configure(with description: String) {
+        textview.text = description
     }
 }
