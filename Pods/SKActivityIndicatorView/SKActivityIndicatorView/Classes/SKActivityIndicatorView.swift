@@ -147,7 +147,14 @@ public class SKActivityIndicator {
             window!.addSubview(backgroundView!)
             backgroundView!.addSubview(activityIndicatorView!)
         } else {
-            window!.addSubview(activityIndicatorView!)
+            if let window = window {
+                guard let activityIndicatorView = activityIndicatorView else {
+                    return
+                }
+
+                window.addSubview(activityIndicatorView)
+            }
+            // window!.addSubview(activityIndicatorView!)
         }
 
         /// Setup Status Message Label
