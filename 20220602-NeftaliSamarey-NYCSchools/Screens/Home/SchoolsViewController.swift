@@ -34,13 +34,6 @@ class SchoolsViewController: UIViewController {
     }
 }
 
-extension SchoolsViewController: UIViewControllerTransitioningDelegate {
-
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        ModalPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-}
-
 extension SchoolsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

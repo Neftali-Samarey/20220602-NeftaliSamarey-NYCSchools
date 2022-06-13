@@ -18,6 +18,8 @@
 		ED8553C0285655360054BFA8 /* DetailViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553BF285655360054BFA8 /* DetailViewCoordinator.swift */; };
 		ED8553C22856D2230054BFA8 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553C12856D2220054BFA8 /* Scores.swift */; };
 		ED8553C72856D8450054BFA8 /* DetailViewStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */; };
+		ED8553CA2856DA7B0054BFA8 /* DetailViewBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553C92856DA7B0054BFA8 /* DetailViewBottomView.swift */; };
+		ED8553CD2856DC4C0054BFA8 /* DetailSeeGradesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553CC2856DC4C0054BFA8 /* DetailSeeGradesButton.swift */; };
 		EDC507A928488A4700BB1249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507A828488A4700BB1249 /* AppDelegate.swift */; };
 		EDC507AB28488A4700BB1249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507AA28488A4700BB1249 /* SceneDelegate.swift */; };
 		EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC507AC28488A4700BB1249 /* SchoolsViewController.swift */; };
@@ -50,6 +52,8 @@
 		ED8553BF285655360054BFA8 /* DetailViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCoordinator.swift; sourceTree = "<group>"; };
 		ED8553C12856D2220054BFA8 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
 		ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewStackView.swift; sourceTree = "<group>"; };
+		ED8553C92856DA7B0054BFA8 /* DetailViewBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewBottomView.swift; sourceTree = "<group>"; };
+		ED8553CC2856DC4C0054BFA8 /* DetailSeeGradesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSeeGradesButton.swift; sourceTree = "<group>"; };
 		EDC507A528488A4700BB1249 /* 20220602-NeftaliSamarey-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20220602-NeftaliSamarey-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC507A828488A4700BB1249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC507AA28488A4700BB1249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 		ED8553C32856D8200054BFA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED8553CB2856DC2C0054BFA8 /* Buttons */,
+				ED8553C82856DA660054BFA8 /* Views */,
 				ED8553C52856D82A0054BFA8 /* Labels */,
 				ED8553C42856D8250054BFA8 /* StackViews */,
 			);
@@ -166,6 +172,23 @@
 			children = (
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		ED8553C82856DA660054BFA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553C92856DA7B0054BFA8 /* DetailViewBottomView.swift */,
+				EDC507FB284F2A4800BB1249 /* CardController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED8553CB2856DC2C0054BFA8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				ED8553CC2856DC4C0054BFA8 /* DetailSeeGradesButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		EDC5079C28488A4700BB1249 = {
@@ -252,7 +275,6 @@
 		EDC507EB284DEA0F00BB1249 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EDC507FB284F2A4800BB1249 /* CardController */,
 				EDC507EC284DEB8600BB1249 /* TableView */,
 			);
 			path = Views;
@@ -392,6 +414,7 @@
 				ED8553C22856D2230054BFA8 /* Scores.swift in Sources */,
 				EDC507DE284DC5E300BB1249 /* NetworkManager.swift in Sources */,
 				EDC507E8284DE8AA00BB1249 /* SchoolsViewCoordinator.swift in Sources */,
+				ED8553CA2856DA7B0054BFA8 /* DetailViewBottomView.swift in Sources */,
 				ED1528F4285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift in Sources */,
 				EDC507EA284DE8C700BB1249 /* SchoolsRequestCoordinator.swift in Sources */,
 				EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */,
@@ -408,6 +431,7 @@
 				EDC507F8284F290100BB1249 /* ModalPresentationController.swift in Sources */,
 				EDC507F5284F01B400BB1249 /* UIColor+Extensions.swift in Sources */,
 				EDC507EE284DEBA300BB1249 /* SchoolsTableView.swift in Sources */,
+				ED8553CD2856DC4C0054BFA8 /* DetailSeeGradesButton.swift in Sources */,
 				EDC50800284F302800BB1249 /* SchoolDetailCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.alabaster
 
         coordinator.configureUI()
     }
@@ -29,5 +29,12 @@ class DetailViewController: UIViewController {
         }
 
         coordinator.configure(with: school)
+    }
+}
+
+extension DetailViewController: UIViewControllerTransitioningDelegate {
+
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        ModalPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }

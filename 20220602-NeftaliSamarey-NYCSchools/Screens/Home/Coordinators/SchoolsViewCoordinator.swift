@@ -11,7 +11,6 @@ class SchoolsViewCoordinator {
 
     private lazy var tableView = SchoolsTableView()
     private lazy var activityView = UIActivityIndicatorView(style: .medium)
-    private lazy var detailCardSlider = SchoolDetailViewControllerCard()
 
     private lazy var detailViewController = DetailViewController()
 
@@ -19,9 +18,6 @@ class SchoolsViewCoordinator {
 
     init(coordinator: SchoolsCoordinator) {
         self.coordinator = coordinator
-
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction))
-        detailCardSlider.view.addGestureRecognizer(panGesture)
     }
 
     func configureTableView() {
@@ -47,50 +43,10 @@ class SchoolsViewCoordinator {
         tableView.reloadData()
     }
 
-    // MARK: Slider
-    func presentSchoolDetails(with details: Schools) {
-        let controller = coordinator.viewController
-        detailCardSlider.modalPresentationStyle = .custom
-        detailCardSlider.transitioningDelegate = controller
-        detailCardSlider.school = details
-
-        controller.present(detailCardSlider, animated: true, completion: nil)
-    }
 
     // MARK: - View Controller
     func pushSchoolDetails(with details: Schools) {
         detailViewController.school = details
         coordinator.viewController.navigationController?.pushViewController(detailViewController, animated: true)
-    }
-
-    @objc
-    func panGestureRecognizerAction(sender: UIPanGestureRecognizer) {
-        let translation = sender.translation(in: detailCardSlider.view)
-        let dragPercentage = max(0, sender.translation(in: detailCardSlider.view).y) / detailCardSlider.view.frame.height
-
-        // View is not allowed to be dragged upward
-        guard translation.y >= 0 else {
-            return
-        }
-
-        // Constrain dragging view up/down
-        detailCardSlider.view.frame.origin = CGPoint(x: 0, y: detailCardSlider.pointOrigin!.y + translation.y)
-
-        switch sender.state {
-        case .ended:
-            let dragVelocity = sender.velocity(in: detailCardSlider.view)
-
-            if dragPercentage > 0.5 || dragVelocity.y >= 1300 {
-                self.detailCardSlider.dismiss(animated: true, completion: nil)
-            } else {
-                // Set back to original position of the view controller
-                UIView.animate(withDuration: 0.1) {
-                    self.detailCardSlider.view.frame.origin = self.detailCardSlider.pointOrigin ?? CGPoint(x: 0, y: 400)
-                }
-            }
-
-        default:
-            break
-        }
     }
 }
