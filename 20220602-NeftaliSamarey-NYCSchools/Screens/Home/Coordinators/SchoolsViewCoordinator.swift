@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SKActivityIndicatorView
 
 class SchoolsViewCoordinator {
 
@@ -41,6 +42,11 @@ class SchoolsViewCoordinator {
 
     func reloadData() {
         tableView.reloadData()
+        SKActivityIndicator.dismiss()
+    }
+
+    func showProgressIndicator() {
+        SKActivityIndicator.show("Loading Schools")
     }
 
 

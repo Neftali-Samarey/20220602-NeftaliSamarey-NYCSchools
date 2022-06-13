@@ -26,6 +26,10 @@ class SchoolsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        DispatchQueue.main.async {
+            self.coordinator.showIndicator()
+        }
+
         coordinator.fetchSchools()
 
         coordinator.completionHandler = { result in

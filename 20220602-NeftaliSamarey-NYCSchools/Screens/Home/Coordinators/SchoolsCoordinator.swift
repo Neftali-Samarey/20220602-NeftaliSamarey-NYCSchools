@@ -30,6 +30,10 @@ class SchoolsCoordinator {
         viewCoordinator.reloadData()
     }
 
+    func showIndicator() {
+        viewCoordinator.showProgressIndicator()
+    }
+
     // Performs a fetch request to the API manager found on the request coordinator
     func fetchSchools() {
         // request
