@@ -17,6 +17,7 @@
 		ED1B44852856F4AD00C93006 /* SchoolsDetailCardVerticalDataSATReadingCriticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B44842856F4AD00C93006 /* SchoolsDetailCardVerticalDataSATReadingCriticalStackView.swift */; };
 		ED1B44872856FB6A00C93006 /* SchoolsDetailCardVerticalDataMathAvgStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B44862856FB6A00C93006 /* SchoolsDetailCardVerticalDataMathAvgStackView.swift */; };
 		ED1B44892856FBAD00C93006 /* SchoolsDetailCardVerticalDataReadingAvgStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B44882856FBAD00C93006 /* SchoolsDetailCardVerticalDataReadingAvgStackView.swift */; };
+		ED1B448B28572EDF00C93006 /* DetailViewMiddleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B448A28572EDE00C93006 /* DetailViewMiddleContainerView.swift */; };
 		ED8553AD28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553AC28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift */; };
 		ED8553BA28564EDE0054BFA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553B928564EDE0054BFA8 /* DetailViewController.swift */; };
 		ED8553BE285655240054BFA8 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8553BD285655240054BFA8 /* DetailCoordinator.swift */; };
@@ -57,6 +58,7 @@
 		ED1B44842856F4AD00C93006 /* SchoolsDetailCardVerticalDataSATReadingCriticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDetailCardVerticalDataSATReadingCriticalStackView.swift; sourceTree = "<group>"; };
 		ED1B44862856FB6A00C93006 /* SchoolsDetailCardVerticalDataMathAvgStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDetailCardVerticalDataMathAvgStackView.swift; sourceTree = "<group>"; };
 		ED1B44882856FBAD00C93006 /* SchoolsDetailCardVerticalDataReadingAvgStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDetailCardVerticalDataReadingAvgStackView.swift; sourceTree = "<group>"; };
+		ED1B448A28572EDE00C93006 /* DetailViewMiddleContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMiddleContainerView.swift; sourceTree = "<group>"; };
 		ED8553AC28508DAA0054BFA8 /* SchoolDetailDescriptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailDescriptionTextView.swift; sourceTree = "<group>"; };
 		ED8553B928564EDE0054BFA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ED8553BD285655240054BFA8 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		ED8553C82856DA660054BFA8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED1B448A28572EDE00C93006 /* DetailViewMiddleContainerView.swift */,
 				ED8553C92856DA7B0054BFA8 /* DetailViewBottomView.swift */,
 				EDC507FB284F2A4800BB1249 /* CardController */,
 			);
@@ -433,6 +436,7 @@
 				EDC507DE284DC5E300BB1249 /* NetworkManager.swift in Sources */,
 				EDC507E8284DE8AA00BB1249 /* SchoolsViewCoordinator.swift in Sources */,
 				ED8553CA2856DA7B0054BFA8 /* DetailViewBottomView.swift in Sources */,
+				ED1B448B28572EDF00C93006 /* DetailViewMiddleContainerView.swift in Sources */,
 				ED1528F4285089EB00B20995 /* SchoolDetailViewDescriptionLabel.swift in Sources */,
 				EDC507EA284DE8C700BB1249 /* SchoolsRequestCoordinator.swift in Sources */,
 				EDC507AD28488A4700BB1249 /* SchoolsViewController.swift in Sources */,

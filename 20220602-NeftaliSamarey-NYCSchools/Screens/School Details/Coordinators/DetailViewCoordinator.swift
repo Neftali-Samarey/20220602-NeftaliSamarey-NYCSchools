@@ -9,6 +9,15 @@ import UIKit
 
 class DetailViewCoordinator {
 
+    lazy var imageViewBanner: UIImageView = {
+        let imageview = UIImageView()
+        imageview.translatesAutoresizingMaskIntoConstraints = false
+        imageview.contentMode = .scaleAspectFill
+
+        return imageview
+    }()
+
+    let middleContainerView = DetailViewMiddleContainerView()
     let stackView = DetailViewStackView()
     let bottomView = DetailViewBottomView()
     private lazy var detailCardSlider = SchoolDetailViewControllerCard()
@@ -27,14 +36,31 @@ class DetailViewCoordinator {
     func configureUI() {
         let controller = coordinator.controller
 
+        controller.view.addSubview(imageViewBanner)
         controller.view.addSubview(stackView)
         controller.view.addSubview(bottomView)
 
         bottomView.delegate = self
 
+        if let image = UIImage(named: "skyline") {
+            imageViewBanner.image = image
+        }
+
+        imageViewBanner.topAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.topAnchor, constant: -30).isActive = true
+        imageViewBanner.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 10).isActive = true
+        imageViewBanner.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -10).isActive = true
+        imageViewBanner.heightAnchor.constraint(equalToConstant: controller.view.bounds.size.height / 3).isActive = true
+
+        imageViewBanner.addSubview(middleContainerView)
+
+        middleContainerView.leadingAnchor.constraint(equalTo: imageViewBanner.leadingAnchor, constant: 6).isActive = true
+        middleContainerView.trailingAnchor.constraint(equalTo: imageViewBanner.trailingAnchor, constant: -6).isActive = true
+        middleContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        middleContainerView.centerYAnchor.constraint(equalTo: imageViewBanner.centerYAnchor, constant: 150).isActive = true
+
         stackView.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 10).isActive = true
         stackView.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -10).isActive = true
-        stackView.topAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        stackView.topAnchor.constraint(equalTo: imageViewBanner.bottomAnchor, constant: 10).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomView.topAnchor, constant: -10).isActive = true
 
         bottomView.heightAnchor.constraint(equalToConstant: 90).isActive = true
