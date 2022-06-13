@@ -1,0 +1,16 @@
+PODS:
+  - SKActivityIndicatorView (1.0.0)
+
+DEPENDENCIES:
+  - SKActivityIndicatorView (~> 1.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SKActivityIndicatorView
+
+SPEC CHECKSUMS:
+  SKActivityIndicatorView: 81c123380127ad497f9b57cd4d11347e40ab3427
+
+PODFILE CHECKSUM: 235b13cb0f6cb36f6a6aed21302aee09c3acdbd2
+
+COCOAPODS: 1.11.3
