@@ -7,6 +7,7 @@
 
 import UIKit
 
+// We Are extending some additional functionalities for converting RGB values into new custom colors
 extension UIColor {
 
     convenience init(r: Int, g:Int , b:Int) {

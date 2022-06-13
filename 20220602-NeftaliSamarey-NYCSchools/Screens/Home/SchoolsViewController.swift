@@ -32,6 +32,7 @@ class SchoolsViewController: UIViewController {
 
         coordinator.fetchSchools()
 
+        // Performing a sort for the result data source, then we assign the sorted data onto the main datasource
         coordinator.completionHandler = { result in
             let sortedSchools = result.sorted() { $0.school_name < $1.school_name }
             self.datasource = sortedSchools
@@ -39,6 +40,7 @@ class SchoolsViewController: UIViewController {
     }
 }
 
+// MARK: - UITableView Datasource
 extension SchoolsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,6 +58,7 @@ extension SchoolsViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableView Deleate
 extension SchoolsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

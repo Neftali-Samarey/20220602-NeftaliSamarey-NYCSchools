@@ -13,9 +13,12 @@ class SchoolsRequestCoordinator {
 
     var completionHandler: (([Schools]) -> Void)?
 
+    // We perform a call to this method in order to obtain an array of Schools
     func fetchSchoolListRequest() {
         manager.fetchSchoolListAPI { results in
+            // Perform operation this on the main thread
             DispatchQueue.main.async {
+                // Assign what we've obtained to a completion handler for later use.
                 self.completionHandler?(results)
             }
         }

@@ -16,10 +16,12 @@ class DetailCoordinator {
         self.controller = controller
     }
 
+    // Configure the UI
     func configureUI() {
         viewCoordinartor.configureUI()
     }
 
+    // Configure the School data
     func configure(with details: Schools) {
         viewCoordinartor.configure(with: details)
     }

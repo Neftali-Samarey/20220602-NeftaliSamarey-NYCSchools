@@ -7,6 +7,7 @@
 
 import Foundation
 
+// This is the data model we will use when we serialize it from JSON
 public struct Scores: Codable {
     let dbn: String
     let school_name: String?

@@ -29,6 +29,7 @@ class DetailViewCoordinator {
     init(coordinator: DetailCoordinator) {
         self.coordinator = coordinator
 
+        // Setting up a pan gesture recornigzer on the slider so we are able to interact with it.
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction))
         detailCardSlider.view.addGestureRecognizer(panGesture)
     }
@@ -46,6 +47,7 @@ class DetailViewCoordinator {
             imageViewBanner.image = image
         }
 
+        // Programmatically configure some UI constrains
         imageViewBanner.topAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.topAnchor, constant: -30).isActive = true
         imageViewBanner.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 10).isActive = true
         imageViewBanner.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -10).isActive = true
@@ -88,6 +90,7 @@ class DetailViewCoordinator {
         controller.present(detailCardSlider, animated: true, completion: nil)
     }
 
+    // MARK: - Pan Gesture Recognizer
     @objc
     func panGestureRecognizerAction(sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: detailCardSlider.view)
@@ -120,6 +123,7 @@ class DetailViewCoordinator {
     }
 }
 
+// MARK: - Extending DetailViewCoordinator to support using the DetailViewBottomViewDelegate's method to pass the info back to the slider.
 extension DetailViewCoordinator: DetailViewBottomViewDelegate {
 
     func didSelectViewGrades() {
@@ -127,7 +131,7 @@ extension DetailViewCoordinator: DetailViewBottomViewDelegate {
             return
         }
 
-        // TODO: Now only pass the DBN to process showing academic grades only
+        // if `schoolDetails` is not nil, we assign it to constant and use that safely.
         presentSchoolDetails(with: schoolDetails)
     }
 }

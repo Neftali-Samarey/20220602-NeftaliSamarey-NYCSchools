@@ -7,6 +7,7 @@
 
 import UIKit
 
+// We are extending UIView to support of corner rounding on the slider view
 extension UIView {
 
     public func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {

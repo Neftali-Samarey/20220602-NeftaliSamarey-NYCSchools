@@ -7,6 +7,7 @@
 
 import Foundation
 
+// This is the model we will use for when we make a network call to organize the JSON file we get back and serialize.
 public struct Schools: Codable {
 
     let dbn: String
