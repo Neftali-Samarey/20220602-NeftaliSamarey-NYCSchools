@@ -20,8 +20,7 @@ class SchoolsDetailCardStackView: UIStackView {
     }()
 
     private let titleLabel = SchoolDetailViewTitleLabel()
-    // private let descriptionLabel = SchoolDetailViewDescriptionLabel()
-    private let descriptionTextView = SchoolDetailDescriptionTextView()
+    private let detailsStackView = SchoolsDetailCardVerticalDataStackView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,27 +36,28 @@ class SchoolsDetailCardStackView: UIStackView {
 
     private func configureStackView() {
         axis = .vertical
-        distribution = .fillProportionally
+        distribution = .fill
         spacing = 10
         alignment = .center
 
         addArrangedSubview(dragView)
         addArrangedSubview(titleLabel)
-        addArrangedSubview(descriptionTextView)
+        addArrangedSubview(detailsStackView)
 
         dragView.heightAnchor.constraint(equalToConstant: 5).isActive = true
         dragView.widthAnchor.constraint(equalToConstant: 55).isActive = true
         dragView.layer.cornerRadius = 2.5
 
-//        titleLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        titleLabel.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 10).isActive = true
-//        // titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
-//        // titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 115).isActive = true
+        titleLabel.widthAnchor.constraint(equalToConstant:UIScreen.main.bounds.size.width - 20).isActive = true
+
+        detailsStackView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width - 20).isActive = true
+        detailsStackView.heightAnchor.constraint(equalToConstant: 200).isActive = true
 
     }
 
-    func configure(with detail: Schools) {
-        titleLabel.configure(with: detail.school_name)
-        descriptionTextView.configure(with: detail.overview_paragraph)
+    func configure(with detail: Scores) {
+        self.titleLabel.text = detail.school_name ?? "Name Unavailable"
+        self.detailsStackView.configure(with: detail)
     }
 }

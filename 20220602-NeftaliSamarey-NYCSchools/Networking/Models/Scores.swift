@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Scores: Codable {
+public struct Scores: Codable {
     let dbn: String
     let school_name: String?
     let num_of_sat_test_takers: String?

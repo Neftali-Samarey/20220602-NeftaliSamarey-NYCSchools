@@ -29,8 +29,8 @@ class SchoolDetailViewControllerCard: UIViewController {
             return
         }
 
-        // configure view
-        coordinator.configure(with: school)
+        coordinator.fetchDetails(with: school.dbn)
+        // coordinator.configure(with: school)
     }
 
     override func viewDidLayoutSubviews() {

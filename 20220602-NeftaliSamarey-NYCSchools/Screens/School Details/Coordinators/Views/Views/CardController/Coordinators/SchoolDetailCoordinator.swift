@@ -10,7 +10,12 @@ import Foundation
 class SchoolDetailCoordinator {
 
     lazy var viewCoordinator = SchoolDetailViewCoordinator(coordinator: self)
+    let requestCoordinator = SchoolDetailRequestCoordinator()
     let viewController: SchoolDetailViewControllerCard
+
+    var completionHandler: (([Scores]) -> Void)?
+    var result: [Scores]?
+    var score: Scores?
 
     init(viewController: SchoolDetailViewControllerCard) {
         self.viewController = viewController
@@ -19,6 +24,41 @@ class SchoolDetailCoordinator {
     }
 
     func configure(with details: Schools) {
-        viewCoordinator.configure(with: details)
+        // viewCoordinator.configure(with: details)
+    }
+
+    func fetchDetails(with dbn: String) {
+
+        // Fetch the school details (all of the JSON for now)
+        requestCoordinator.fetchDesignatedSchoolPerformance()
+
+        // Grab the completion handler to obtain the data and extract here
+        requestCoordinator.completionHandler = { result in
+            // self.completionHandler?(result)
+            self.indexResult(with: dbn, result: result)
+        }
+    }
+
+    private func indexResult(with dbn: String, result: [Scores]) {
+        let resultMapped = result.filter {
+            $0.dbn == dbn
+        }
+
+        // Align the elements from the filtered result
+        for i in resultMapped.enumerated() {
+            if i.element.dbn == dbn {
+                self.score = Scores(dbn: i.element.dbn,
+                                    school_name: i.element.school_name,
+                                    num_of_sat_test_takers: i.element.num_of_sat_test_takers,
+                                    sat_critical_reading_avg_score: i.element.sat_critical_reading_avg_score,
+                                    sat_math_avg_score: i.element.sat_math_avg_score,
+                                    sat_writing_avg_score: i.element.sat_writing_avg_score)
+            }
+        }
+
+        // Send the data back to the view coordinator now that we've configured it.
+        if let score = score {
+            viewCoordinator.configure(with: score)
+        }
     }
 }
