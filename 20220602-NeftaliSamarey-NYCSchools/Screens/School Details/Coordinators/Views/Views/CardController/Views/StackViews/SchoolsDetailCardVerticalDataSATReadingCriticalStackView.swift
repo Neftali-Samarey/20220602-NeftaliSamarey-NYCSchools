@@ -46,7 +46,7 @@ class SchoolsDetailCardVerticalDataSATReadingCriticalStackView: UIStackView {
         imageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
 
-        if let image = UIImage(named: "reading") {
+        if let image = UIImage(named: "readingAvg") {
             imageView.image = image
         }
 

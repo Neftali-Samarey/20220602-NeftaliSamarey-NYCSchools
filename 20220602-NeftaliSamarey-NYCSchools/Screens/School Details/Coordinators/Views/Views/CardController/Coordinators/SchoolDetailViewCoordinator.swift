@@ -28,7 +28,7 @@ class SchoolDetailViewCoordinator {
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
         stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -275).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300).isActive = true
     }
 
     // Assign the scores property with the new information obtained

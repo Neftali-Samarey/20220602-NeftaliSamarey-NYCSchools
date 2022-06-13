@@ -29,7 +29,8 @@ class SchoolsViewController: UIViewController {
         coordinator.fetchSchools()
 
         coordinator.completionHandler = { result in
-            self.datasource = result
+            let sortedSchools = result.sorted() { $0.school_name < $1.school_name }
+            self.datasource = sortedSchools
         }
     }
 }
@@ -54,8 +55,8 @@ extension SchoolsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // coordinator.presentSchoolDetails(with: datasource[indexPath.item])
-        coordinator.pushSchoolDetails(with: datasource[indexPath.item])
+        let data = datasource[indexPath.item]
+        coordinator.pushSchoolDetails(with: data)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

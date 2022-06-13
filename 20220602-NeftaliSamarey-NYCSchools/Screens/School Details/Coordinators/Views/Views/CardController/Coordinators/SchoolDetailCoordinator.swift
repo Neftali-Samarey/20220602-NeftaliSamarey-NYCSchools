@@ -34,18 +34,19 @@ class SchoolDetailCoordinator {
 
         // Grab the completion handler to obtain the data and extract here
         requestCoordinator.completionHandler = { result in
-            // self.completionHandler?(result)
+            if result.isEmpty {
+                return
+            }
+
             self.indexResult(with: dbn, result: result)
         }
     }
 
     private func indexResult(with dbn: String, result: [Scores]) {
-        let resultMapped = result.filter {
-            $0.dbn == dbn
-        }
+        let filteredResult = result.filter{ $0.dbn.contains(dbn) }
 
         // Align the elements from the filtered result
-        for i in resultMapped.enumerated() {
+        for i in filteredResult.enumerated() {
             if i.element.dbn == dbn {
                 self.score = Scores(dbn: i.element.dbn,
                                     school_name: i.element.school_name,
@@ -57,8 +58,11 @@ class SchoolDetailCoordinator {
         }
 
         // Send the data back to the view coordinator now that we've configured it.
-        if let score = score {
-            viewCoordinator.configure(with: score)
+        guard let score = score else {
+            print("An error occured")
+            return
         }
+
+        viewCoordinator.configure(with: score)
     }
 }
