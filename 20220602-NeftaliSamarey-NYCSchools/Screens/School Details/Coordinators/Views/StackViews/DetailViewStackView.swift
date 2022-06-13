@@ -34,6 +34,7 @@ class DetailViewStackView: UIStackView {
         textview.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width - 20).isActive = true
     }
 
+    // Since textview is private, we are using public method to configure the textview.
     func configure(with description: String) {
         textview.text = description
     }

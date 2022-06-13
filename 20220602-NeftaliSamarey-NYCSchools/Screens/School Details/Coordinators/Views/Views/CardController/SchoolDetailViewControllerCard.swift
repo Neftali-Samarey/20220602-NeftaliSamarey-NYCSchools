@@ -30,7 +30,6 @@ class SchoolDetailViewControllerCard: UIViewController {
         }
 
         coordinator.fetchDetails(with: school.dbn)
-        // coordinator.configure(with: school)
     }
 
     override func viewDidLayoutSubviews() {

@@ -120,7 +120,6 @@
 				FE97ECB8F7C9E6300743C238 /* Pods-20220602-NeftaliSamarey-NYCSchools.debug.xcconfig */,
 				AC3FE3B505ADF3040C7FA783 /* Pods-20220602-NeftaliSamarey-NYCSchools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,7 +194,6 @@
 			children = (
 				ED8553CB2856DC2C0054BFA8 /* Buttons */,
 				ED8553C82856DA660054BFA8 /* Views */,
-				ED8553C52856D82A0054BFA8 /* Labels */,
 				ED8553C42856D8250054BFA8 /* StackViews */,
 			);
 			path = Views;
@@ -207,13 +205,6 @@
 				ED8553C62856D8450054BFA8 /* DetailViewStackView.swift */,
 			);
 			path = StackViews;
-			sourceTree = "<group>";
-		};
-		ED8553C52856D82A0054BFA8 /* Labels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Labels;
 			sourceTree = "<group>";
 		};
 		ED8553C82856DA660054BFA8 /* Views */ = {

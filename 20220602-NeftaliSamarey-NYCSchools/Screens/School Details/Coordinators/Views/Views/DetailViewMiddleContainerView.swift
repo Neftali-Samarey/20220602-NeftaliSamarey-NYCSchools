@@ -43,6 +43,7 @@ class DetailViewMiddleContainerView: UIView {
         titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
     }
 
+    // Since titleLabel is private, we are using public method to configure the label.
     func configure(with title: String) {
         titleLabel.text = title
     }
