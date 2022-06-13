@@ -46,6 +46,7 @@ extension SchoolsViewController: UITableViewDataSource {
 
         let schools = datasource[indexPath.item]
         cell?.textLabel?.text = schools.school_name
+        cell?.accessoryType = .disclosureIndicator
 
         return cell ?? UITableViewCell()
     }
