@@ -46,7 +46,7 @@ class SchoolsViewCoordinator {
     }
 
     func showProgressIndicator() {
-        SKActivityIndicator.show("Loading Schools")
+        SKActivityIndicator.show("Loading Data...")
     }
 
 
